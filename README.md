@@ -7,8 +7,23 @@ EasyInterstitialAd is a simple Android library for managing interstitial ads wit
 
 To use EasyInterstitialAd in your Android project, you need to add the library as a dependency. You can do this by adding the following dependency to your app-level `build.gradle` file:
 
+Add it in your root build.gradle at the end of repositories:
+
+Step 2. Add the dependency
+Project level gradle
 ```gradle
-implementation 'com.devhafeez:easyinterstitialad:1.0.0'
+	allprojects {
+		repositories {
+			...
+			maven { url 'https://jitpack.io' }
+		}
+	}
+```
+app level gradle
+```gradle
+	dependencies {
+	        implementation 'com.github.DevHafeez:EasyInterstitialAd:1.0.0'
+    }
 ```
 Make sure to sync your project to fetch the library.
 
