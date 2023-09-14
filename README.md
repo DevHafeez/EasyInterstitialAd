@@ -12,14 +12,14 @@ implementation 'com.devhafeez:easyinterstitialad:1.0.0'
 ```
 Make sure to sync your project to fetch the library.
 
-##Step 2: Initialize the EasyInterstitialAd
+## Step 2: Initialize the EasyInterstitialAd
 You should initialize EasyInterstitialAd in your application's code, typically in the onCreate method of your Application class or in your Activity.
-```groovy
+```java
 // Initialize EasyInterstitialAd with your context and ad ID
 EasyInterstitialAd.init(this, "YOUR_AD_ID");
 ```
 ### Usage in Kotlin
-```groovy
+```kotlin
 // Show an interstitial ad
 EasyInterstitialAd.show(this, true, object : EasyInterstitialAd.MyInterAdListener {
     override fun onAdClosed(isSuccess: Boolean) {
@@ -28,7 +28,7 @@ EasyInterstitialAd.show(this, true, object : EasyInterstitialAd.MyInterAdListene
 })
 ```
 ### Usage in Java
-```groovy
+```java
 // Show an interstitial ad
 EasyInterstitialAd.show(this, true, new EasyInterstitialAd.MyInterAdListener() {
     @Override
