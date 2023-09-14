@@ -39,19 +39,19 @@ EasyInterstitialAd.show(this, true, new EasyInterstitialAd.MyInterAdListener() {
 ```
 ### Configuration
 You can control whether to show or hide interstitial ads by updating the shouldShowInterAd variable in the EasyInterstitialAd class. Set it to true if you want to show interstitial ads or false to hide them.
-```groovy
+```java
 EasyInterstitialAd.shouldShowInterAd = true; // Show interstitial ads
 ```
 ### Callbacks
 EasyInterstitialAd provides callbacks to handle various events:
-```groovy
+```java
 onAdLoading(): Called when an ad is being loaded.
 onAdFailed(LoadAdError loadAdError): Called when ad loading fails with the provided error.
 onAdLoaded(InterstitialAd interstitialAd): Called when an ad is successfully loaded.
 onAdClosed(boolean isSuccess): Called when the ad is closed. The isSuccess parameter indicates whether the ad was closed successfully.
 These callbacks can be implemented by overriding the respective methods in the MyInterAdListener interface when calling EasyInterstitialAd.show.
 ```
-```groovy
+```java
 EasyInterstitialAd.show(this, true, new EasyInterstitialAd.MyInterAdListener() {
     @Override
     public void onAdLoading() {
